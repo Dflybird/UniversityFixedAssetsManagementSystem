@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-2-24 21:07:16 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="entity.Form" table="FORM">
+        <id name="formId" type="java.lang.String">
+            <column name="FORMID" />
+            <generator class="assigned" />
+        </id>
+        <property name="warehouseEntryTime" type="java.util.Date">
+            <column name="WAREHOUSEENTRYTIME" />
+        </property>
+        <property name="transactorName" type="java.lang.String">
+            <column name="TRANSACTORNAME" />
+        </property>
+        <property name="remark" type="java.lang.String">
+            <column name="REMARK" />
+        </property>
+    </class>
+</hibernate-mapping>

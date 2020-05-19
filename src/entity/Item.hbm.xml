@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-2-24 21:02:38 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="entity.Item" table="ITEM">
+        <id name="itemId" type="java.lang.String">
+            <column name="ITEMID" />
+            <generator class="assigned" />
+        </id>
+        <property name="formId" type="java.lang.String">
+            <column name="FORMID" />
+        </property>
+        <property name="itemName" type="java.lang.String">
+            <column name="ITEMNAME" />
+        </property>
+        <property name="specification" type="java.lang.String">
+            <column name="SPECIFICATION" />
+        </property>
+        <property name="num" type="int">
+            <column name="NUM" />
+        </property>
+        <property name="price" type="double">
+            <column name="PRICE" />
+        </property>
+        <property name="amount" type="double">
+            <column name="AMOUNT" />
+        </property>
+        <property name="remark" type="java.lang.String">
+            <column name="REMARK" />
+        </property>
+    </class>
+</hibernate-mapping>
